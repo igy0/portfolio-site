@@ -1,6 +1,22 @@
+@keyframes naming {
+    from {color:#353535;}
+    /* to {color: #d9d9d9;} */
+    /* to {color:#f8f4e3;} */
+    to {color:#f9fafb;}
+}
+
+/* @keyframes backImg {
+    from {background-color: #eee;}
+    to {background-image: url("IMG_2499.jpeg");}
+} */
 body {
     padding:0;
     margin:0;
+    /* background-color: #353535; */
+    background-image: url("IMG_2499.jpeg");
+    background-position: center;
+    animation-name: backImg;
+    animation-duration: 2s;
 }
 .container {
     display: grid;
@@ -15,6 +31,10 @@ body {
     grid-row: 1;
     place-self: center;
     font-size:3em;
+    animation-name: naming;
+    animation-duration: 3s;
+    /* color:#d9d9d9; */
+    color:#f9fafb;
 }
 
 #about {
@@ -25,7 +45,14 @@ body {
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
-
+nav {
+    animation-name: naming;
+    animation-duration: 6s;
+    color: #d9d9d9;
+}
+nav:hover {
+    color:#eee;
+}
 #contact {
     grid-column: 3;
     grid-row:1;
